@@ -1,9 +1,7 @@
 
-import Greeting from './components/Greeting';
-import Button from './components/Button';
-import Counter from './components/Counter';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Info from './pages/Info';
 
 
 function App() {
@@ -15,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element = {<Home />} />
+        <Route path="/info" element = {<Info />} />
       </Routes>
     </BrowserRouter>
   );
